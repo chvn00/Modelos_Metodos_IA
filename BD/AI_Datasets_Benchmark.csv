@@ -1,0 +1,109 @@
+Nombre,Área / Tipo de tarea,Descripción,Tamaño aproximado,Enlace,Modelo sugerido
+IMDB Reviews,NLP - Sentimiento,50k reseñas de películas (pos/neg). Clásico para clasificación.,"50,000 textos (~80 MB)",https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews,RNN / LSTM / GRU
+SST-2 (Stanford Sentiment Treebank),NLP - Sentimiento,Frases con polaridad binaria; muy usado en GLUE.,67k oraciones (~70 MB),https://gluebenchmark.com/tasks,LSTM / Transformer
+SST-5,NLP - Sentimiento (5 clases),Sentimiento fino en 5 niveles.,215k frases (token-level),https://nlp.stanford.edu/sentiment/index.html,BiLSTM / Transformer
+AG News,NLP - Clasificación de texto,"Noticias en 4 categorías (World, Sports, Business, Sci/Tech).","120,000 textos (~30 MB)",https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset,CNN / Transformer
+20 Newsgroups,NLP - Multiclase,20 categorías de foros; texto crudo y lematizado.,"18,846 textos (~20 MB)",https://scikit-learn.org/0.19/datasets/twenty_newsgroups.html,NB / SVM / Transformer
+Reuters-21578,NLP - Multietiqueta,Noticias con múltiples temas por documento.,"10,788 textos (~5 MB)",https://archive.ics.uci.edu/ml/datasets/reuters-21578-text-categorization-collection,SVM / Transformer
+DBPedia Ontology,NLP - Clasificación,Entradas de Wikipedia en 14 clases.,"630,000 textos (~250 MB)",https://wiki.dbpedia.org/,FastText / Transformer
+Yahoo Answers,NLP - Clasificación temática,Preguntas/respuestas categorizadas.,1.4M textos (~1.2 GB),https://www.kaggle.com/datasets/soumikrakshit/yahoo-answers-dataset,Transformer
+Amazon Reviews (Polarity),NLP - Sentimiento,Opiniones de productos (pos/neg).,4M textos (~3 GB),https://www.kaggle.com/datasets/bittlingmayer/amazonreviews,Transformer / DistilBERT
+Yelp Reviews,NLP - Sentimiento (1-5),Reseñas de restaurantes y negocios.,6M registros (varios GB),https://www.yelp.com/dataset,Transformer
+SNLI,NLP - Inferencia textual (NLI),"Premisa/hipótesis: entailment, contradiction, neutral.",570k pares (~300 MB),https://nlp.stanford.edu/projects/snli/,BERT / RoBERTa
+MultiNLI (MNLI),NLP - Inferencia textual,NLI en múltiples géneros de texto.,433k pares (~500 MB),https://cims.nyu.edu/~sbowman/multinli/,BERT / RoBERTa
+Quora Question Pairs,NLP - Parafraseo,Decidir si dos preguntas son duplicadas.,404k pares (~150 MB),https://www.kaggle.com/competitions/quora-question-pairs/data,Siamese / BERT
+MRPC (Microsoft Research Paraphrase),NLP - Parafraseo,Detección de oraciones parafraseadas.,5.8k pares (~5 MB),https://www.microsoft.com/en-us/download/details.aspx?id=52398,BERT
+SQuAD v1.1/v2.0,NLP - QA extractivo,Preguntas sobre artículos de Wikipedia (v2 incluye no-answer).,100k–150k pares (~500 MB),https://rajpurkar.github.io/SQuAD-explorer/,BERT / QA
+CoNLL-2003,NLP - NER,"Etiquetas de persona, organización, ubicación, misc.",20k oraciones (~5 MB),https://www.clips.uantwerpen.be/conll2003/ner/,BiLSTM-CRF / BERT
+TREC QC,NLP - Clasificación de preguntas,"Clasifica preguntas por tipo (HUM, DESC, NUM, LOC...).",5.5k train / 500 test,https://cogcomp.seas.upenn.edu/Data/QA/QC/,SVM / BERT
+WikiText-103,NLP - Modelado de lenguaje,Wikipedia limpia para LM.,103M tokens (~190 MB),https://huggingface.co/datasets/wikitext,Transformer / GPT
+WMT14 En-De,NLP - Traducción automática,Paralelo inglés-alemán; benchmark clásico.,4.5M pares (~1 GB),http://statmt.org/wmt14/translation-task.html,Transformer / seq2seq
+Common Voice,NLP/Audiospeech - ASR,Voz multilingüe colaborativa (texto+audio).,Decenas de miles de horas,https://commonvoice.mozilla.org/en/datasets,Conformer / Wav2Vec2
+TED-LIUM,NLP/Audiospeech - ASR,Charlas TED alineadas con transcripciones.,118–452 h (v1–v3),https://www.openslr.org/19/,ASR
+LibriTTS,TTS / ASR,Variantes de LibriSpeech para síntesis de voz.,585h (~80 GB),https://www.openslr.org/60/,Tacotron / FastSpeech
+LJSpeech,TTS,"1 hablante, 13k clips; síntesis de voz.",24h (~2–4 GB),https://keithito.com/LJ-Speech-Dataset/,Tacotron / HiFi-GAN
+M4 Competition,Series - Forecasting,"Multiescala: anual, trimestral, mensual, diario.",100k+ series (~500 MB),https://github.com/Mcompetitions/M4-methods,ARIMA / LSTM / TFT
+Monash TS Repository,Series - Forecasting/Clasificación,Colección curada multi-dominio.,30+ datasets (1–2 GB),https://forecastingdata.org/,LSTM / Transformer
+UCR/UEA Archive,Series - Clasificación,+120 datasets uni/multivariados.,~5 GB total,https://www.timeseriesclassification.com/,1D-CNN / LSTM
+NAB,Series - Anomalías,Series reales con anomalías etiquetadas.,365 MB,https://github.com/numenta/NAB,Autoencoder / RNN
+"ETT (ETTh1/2, ETTm1/2)",Series - Forecasting,Temperatura transformador (hourly/min).,4 datasets (~50–200 MB),https://github.com/zhouhaoyi/ETDataset,Informer / Transformer
+Electricity Load Diagrams,Series - Energía,Consumo eléctrico de 370 clientes (2011–2014).,~120 MB,https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014,LSTM / Prophet
+Household Power Consumption,Series - Energía/Smart Meter,Consumo de un hogar (minutal).,20 MB,https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption,LSTM
+Air Quality UCI,Series - Sensores,Gases/temperatura con timestamps.,3 MB,https://archive.ics.uci.edu/ml/datasets/Air+Quality,GRU / LSTM
+Sunspots,Series - Naturaleza,Número de manchas solares mensual.,<1 MB,https://www.sidc.be/silso/datafiles,LSTM
+Exchange Rate,Series - Finanzas,Tipos de cambio diarios multimoneda.,<10 MB,https://github.com/laiguokun/multivariate-time-series-data,LSTM
+PTB-XL ECG,Series - Biomédico,ECG 12 derivaciones anotado.,1.8 GB,https://physionet.org/content/ptb-xl/1.0.3/,1D-CNN / LSTM
+MIT-BIH Arrhythmia,Series - Biomédico,ECG con anotaciones de arritmias.,700 MB,https://physionet.org/content/mitdb/1.0.0/,1D-CNN / RNN
+HAR UCI (Acelerómetros),Series - Actividad humana,Sensores de smartphone para actividades.,~11k muestras (~15 MB),https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones,1D-CNN / LSTM
+PAMAP2,Series - Actividad humana,Actividades físicas con sensores portables.,~1.2 GB,https://archive.ics.uci.edu/ml/datasets/pamap2+physical+activity+monitoring,LSTM
+NYC Taxi Demand,Series - Demanda,Demanda de taxis por zona/tiempo.,~50–100 MB,https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page,LSTM / GNN
+Solar Energy,Series - Energía renovable,Producción solar multivariante.,~50 MB,https://github.com/laiguokun/multivariate-time-series-data,RNN / LSTM / TCN
+MNIST,Imágenes - Clasificación,Dígitos manuscritos 28×28 grises.,"70,000 imágenes (~12 MB)",https://keras.io/api/datasets/mnist/,CNN
+Fashion-MNIST,Imágenes - Clasificación,Prendas 28×28 grises.,"70,000 imágenes (~30 MB)",https://github.com/zalandoresearch/fashion-mnist,CNN
+KMNIST,Imágenes - Clasificación,Caracteres japoneses (hiragana) 28×28.,"70,000 (~15 MB)",https://github.com/rois-codh/kmnist,CNN
+EMNIST,Imágenes - Clasificación,Letras/dígitos extendido de MNIST.,"814,255 (~300 MB)",https://www.nist.gov/itl/products-and-services/emnist-dataset,CNN
+CIFAR-10,Imágenes - Clasificación,10 clases 32×32 RGB.,"60,000 (~170 MB)",https://www.cs.toronto.edu/~kriz/cifar.html,CNN / ResNet
+CIFAR-100,Imágenes - Clasificación,100 clases 32×32 RGB.,"60,000 (~170 MB)",https://www.cs.toronto.edu/~kriz/cifar.html,CNN / DenseNet
+SVHN,Imágenes - Clasificación,Dígitos de números de casas.,>600k (~2.5 GB),http://ufldl.stanford.edu/housenumbers/,CNN
+STL-10,Imágenes - Clasificación,Imagenes 96×96; 10 clases; con datos no etiquetados.,130k (~2.9 GB),https://cs.stanford.edu/~acoates/stl10/,CNN
+Tiny ImageNet,Imágenes - Clasificación,"200 clases, 100k imágenes 64×64.",~1.1 GB,https://tinyimagenet.herokuapp.com/,CNN / ViT
+ImageNet ILSVRC,Imágenes - Clasificación/Detección,1k clases; gran escala.,~150 GB,https://www.image-net.org/,CNN / ViT
+COCO,Imágenes - Detección/Segmentación,330k imágenes con anotaciones.,~25 GB,https://cocodataset.org/#home,YOLO / Mask R-CNN
+Pascal VOC 2007/2012,Imágenes - Detección/Segmentación,Objetos en contexto; estándar clásico.,~2 GB,http://host.robots.ox.ac.uk/pascal/VOC/,Faster R-CNN
+Cityscapes,Imágenes - Segmentación urbana,Escenas urbanas con máscaras detalladas.,~25–30 GB,https://www.cityscapes-dataset.com/,SegNet / DeepLab
+ADE20K,Imágenes - Segmentación semántica,20k+ imágenes con 150 clases.,~2–3 GB,http://groups.csail.mit.edu/vision/datasets/ADE20K/,PSPNet / UPerNet
+SUN397,Imágenes - Escenas,397 categorías de escenas.,~130k (~12 GB),http://vision.princeton.edu/projects/2010/SUN/,CNN
+Places365,Imágenes - Escenas,365 categorías; preentrenos disponibles.,~80 GB,http://places2.csail.mit.edu/,ResNet / PlacesCNN
+CamVid,Imágenes - Segmentación,Vídeo urbano anotado frame a frame.,~1–2 GB,http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/,FCN / SegNet
+KITTI,Imágenes - Conducción autónoma,"Stereo, odometría, detección 3D.",~180 GB (varios tasks),http://www.cvlibs.net/datasets/kitti/,3D Detection / Flow
+LFW (Labeled Faces in the Wild),Imágenes - Verificación facial,Rostros en condiciones no controladas.,~175 MB,http://vis-www.cs.umass.edu/lfw/,Siamese / FaceNet
+CelebA,Imágenes - Atributos faciales,200k rostros con 40 atributos.,~1.3 GB,http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html,CNN / GAN
+Food-101,Imágenes - Clasificación,101 categorías de platos.,~5 GB,https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/,CNN
+GTSRB,Imágenes - Tráfico,Señales de tráfico 43 clases.,~1 GB,https://benchmark.ini.rub.de/,CNN
+FER2013,Imágenes - Emoción facial,7 clases de expresiones faciales.,~300 MB,https://www.kaggle.com/datasets/msambare/fer2013,CNN
+NIH ChestX-ray14,Imágenes - Radiografía,112k radiografías con 14 etiquetas.,~40 GB,https://nihcc.app.box.com/v/ChestXray-NIHCC,CNN
+CheXpert,Imágenes - Radiografía,CheXpert con 224k estudios; multi-etiqueta.,~400 GB,https://stanfordmlgroup.github.io/competitions/chexpert/,CNN
+ISIC 2018,Imágenes - Lesiones de piel,Segmentación/Clasificación dermatoscópica.,~50 GB,https://challenge2018.isic-archive.com/,U-Net / CNN
+BraTS,Imágenes - Tumores cerebrales,MRI multimodal con segmentación.,~100 GB,https://www.med.upenn.edu/cbica/brats2020/data.html,3D U-Net
+LibriSpeech,Audio - ASR,Audiolibros en inglés (limpio/otro).,~60 GB,https://www.openslr.org/12/,Conformer / W2V2
+UrbanSound8K,Audio - Sonidos urbanos,8732 clips etiquetados (10 clases).,~6 GB (audio comprimido),https://urbansounddataset.weebly.com/urbansound8k.html,1D-CNN
+ESC-50,Audio - Ambientales,2000 clips de 50 clases.,~600 MB,https://github.com/karoldvl/ESC-50,1D-CNN / CRNN
+VoxCeleb1/2,Audio - Speaker ID,Voces de celebridades y entrevistas.,>1500 h (decenas de GB),https://www.robots.ox.ac.uk/~vgg/data/voxceleb/,ECAPA / ResNet
+GTZAN,Audio - Géneros musicales,10 géneros musicales etiquetados.,"1,000 pistas (~1 GB)",http://marsyas.info/downloads/datasets.html,CNN
+FSD50K,Audio - Sonidos diversos,50k clips anotados manualmente.,~27 GB,https://zenodo.org/record/4060432,CNN / PANNs
+MUSAN,Audio - Ruido/música/voz,Dataset para entrenamiento de VAD/ASV.,~11 GB,https://www.openslr.org/17/,ASV / Augmentations
+NSynth,Audio - Síntesis musical,"Notas musicales etiquetadas (instrumento, pitch, etc.).",~75 GB,https://magenta.tensorflow.org/datasets/nsynth,WaveNet / Autoencoder
+TIMIT,Audio - Fonético,Grabaciones con anotación fonética detallada.,~1.1 GB,https://catalog.ldc.upenn.edu/LDC93S1,ASR
+Speech Commands (Google),Audio - Comandos,Palabras cortas (yes/no/up/stop...).,~2 GB,https://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html,CNN / LSTM
+Iris,Tabular - Clasificación,Características de flores de Iris (3 clases).,150 filas (~60 KB),https://archive.ics.uci.edu/ml/datasets/iris,MLP / SVM
+Wine Quality,Tabular - Regresión/Clasificación,Vino tinto/blanco con calificación de calidad.,6.5k filas (~1 MB),https://archive.ics.uci.edu/ml/datasets/wine+quality,MLP / RandomForest
+Titanic,Tabular - Clasificación,Supervivencia de pasajeros (Kaggle).,891 filas / test adicional,https://www.kaggle.com/competitions/titanic/data,LR / XGBoost
+Adult Census Income,Tabular - Clasificación,Ingreso >50K según censo 1994.,48k filas (~3 MB),https://archive.ics.uci.edu/ml/datasets/adult,XGBoost / CatBoost
+Heart Disease,Tabular - Clasificación médica,Indicadores clínicos y diagnóstico.,303 filas (~100 KB),https://archive.ics.uci.edu/ml/datasets/Heart+Disease,MLP / SVM
+Breast Cancer Wisconsin,Tabular - Clasificación médica,Características histológicas de tumores.,569 filas (~200 KB),https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic),SVM / MLP
+Bank Marketing,Tabular - Clasificación,Respuesta a campañas bancarias.,45k filas (~50 MB),https://archive.ics.uci.edu/ml/datasets/Bank+Marketing,LR / XGBoost
+Housing (Boston),Tabular - Regresión,Precios de vivienda (Boston).,506 filas (~50 KB),https://archive.ics.uci.edu/ml/datasets/Housing,Linear / MLP
+California Housing,Tabular - Regresión,Vivienda California (1990).,20k filas (~2 MB),https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html,Tree / XGBoost
+Credit Card Fraud,Tabular - Anomalías,Transacciones con fraude etiquetado.,"284,807 filas (~150 MB)",https://www.kaggle.com/mlg-ulb/creditcardfraud,Autoencoder / XGBoost
+Covertype,Tabular - Clasificación,Tipos de cobertura forestal (54 atributos).,581k filas (~75 MB),https://archive.ics.uci.edu/ml/datasets/covertype,XGBoost / LightGBM
+HIGGS,Tabular - Clasificación,Eventos simulados (partículas).,11M filas (~7.5 GB),https://archive.ics.uci.edu/ml/datasets/HIGGS,XGBoost / DNN
+Poker Hand,Tabular - Clasificación,Manos de póker etiquetadas.,1M filas (~50 MB),https://archive.ics.uci.edu/ml/datasets/Poker+Hand,Tree / MLP
+Santander Customer Transaction,Tabular - Clasificación,Competencia Kaggle; variables anónimas.,200k filas (~140 MB),https://www.kaggle.com/c/santander-customer-transaction-prediction,LightGBM / NN
+Porto Seguro Safe Driver,Tabular - Clasificación,Predicción de riesgo de seguros.,595k filas (~300 MB),https://www.kaggle.com/c/porto-seguro-safe-driver-prediction,XGBoost / CatBoost
+Home Credit Default Risk,Tabular - Clasificación,Probabilidad de incumplimiento de crédito.,307k filas (~600 MB),https://www.kaggle.com/c/home-credit-default-risk,LightGBM / NN
+Bike Sharing (UCI),Tabular - Regresión,Alquiler de bicicletas diario/horario.,17k filas (~3 MB),https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset,Linear / XGBoost
+Loan Prediction,Tabular - Clasificación,Aprobación de préstamos (AV).,~12k filas,https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/,Tree / LR
+VQA v2,Multimodal - Preguntas y respuestas visuales,Pares imagen+pregunta con respuestas abiertas.,~200k imágenes / 1.1M Q&A (~200 GB),https://visualqa.org/,BUTD / Transformer
+Flickr8k,Multimodal - Captioning,8k imágenes con 5 descripciones cada una.,8k imágenes (~1 GB),http://nlp.cs.illinois.edu/HockenmaierGroup/Framing_Image_Description.html,Show&Tell / Transformer
+Flickr30k,Multimodal - Captioning,30k imágenes con 5 captions.,30k imágenes (~2 GB),https://shannon.cs.illinois.edu/DenotationGraph/,Show&Attend / Transformer
+MSCOCO Captions,Multimodal - Captioning,COCO con descripciones textuales.,330k imágenes (~25 GB),https://cocodataset.org/#home,Transformer
+Conceptual Captions,Multimodal - Captioning web,Millones de imagen‑texto de la web.,3.3M pares (decenas de GB),https://ai.google.com/research/ConceptualCaptions/,CLIP / ViT
+MSR-VTT,Multimodal - Video‑texto,10k videos con descripciones.,~50 GB,http://ms-multimedia-challenge.com/2016/dataset,Video Transformer
+TVQA,Multimodal - QA en video,QA basado en shows de TV con sub‑títulos.,152.5k QA (~hundreds GB),http://tvqa.cs.unc.edu/,VideoQA
+YouCook2,Multimodal - Acción/Captioning,Videos de cocina anotados.,~40 GB,http://youcook2.eecs.umich.edu/,Video models
+UCI Machine Learning Repository,Multidominio,Colección clásica con 600+ datasets.,N/A,https://archive.ics.uci.edu/ml/index.php,Todos
+Kaggle Datasets,Multidominio,Miles de datasets públicos y competiciones.,N/A,https://www.kaggle.com/datasets,Todos
+Hugging Face Datasets,Multidominio,"Datasets de NLP, visión, audio y multimodal.",N/A,https://huggingface.co/datasets,Todos
+Google Dataset Search,Multidominio,Buscador global de datasets abiertos.,N/A,https://datasetsearch.research.google.com/,Todos
+Papers With Code Datasets,Multidominio,Datasets ligados a benchmarks SOTA.,N/A,https://paperswithcode.com/datasets,Todos
+OpenML,Multidominio,Repositorio con API para ML reproducible.,N/A,https://www.openml.org/,Todos
